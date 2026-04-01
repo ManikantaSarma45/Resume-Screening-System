@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from typing import Optional
 
-from backend.app.api.deps import get_db
-from backend.app.models.job import Job
-from backend.app.schemas.job import JobCreate, JobOut
+from app.api.deps import get_db
+from app.models.job import Job
+from app.schemas.job import JobCreate, JobOut
 
 router = APIRouter()
 

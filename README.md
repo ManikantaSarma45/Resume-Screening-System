@@ -1,40 +1,88 @@
-# ATS Resume Screening System
+# Resume Screening System
 
-## Features
-- Resume Upload
-- Job Creation
-- Resume Ranking (Matching Score)
+This project is a web application for managing job descriptions, uploading resumes, and ranking candidates based on job requirements.
+
+---
 
 ## Tech Stack
-- FastAPI
-- PostgreSQL
-- HTML, Tailwind, JS
-## How to Run
-**1.Clone the Repository**
-git clone https://github.com/ManikantaSarma45/Resume-Screening-System.git
-cd Resume-Screening-System
-**2. Setup Backend (FastAPI)**
-cd backend
-python3 -m venv venv
-source venv/bin/activate   # Mac/Linux
-pip install -r requirements.txt
-**3.Setup Database (PostgreSQL)**
-DATABASE_URL=postgresql://username:password@localhost/dbname
-**4.Run Backend Server**
-uvicorn app.main:app --reload
-http://127.0.0.1:8000
-http://127.0.0.1:8000/docs
-**5.Open Frontend**
-Then open in browser:
-upload.html
-jobs.html
-ranking.html
-**6.Features to Test**
-Upload Resume (PDF)
-View Resumes
-Create Jobs
-Rank Candidate
-**Notes**
-Backend runs on: http://127.0.0.1:8000
-API prefix: /api/v1
-Uploads stored in /uploads
+
+Frontend: HTML, CSS, JavaScript  
+Backend: FastAPI (Python)  
+Database: PostgreSQL  
+Containerization: Docker and Docker Compose  
+
+---
+
+## Project Structure
+
+resume-screening-system/
+
+backend/ → FastAPI backend  
+frontend/ → Static frontend files  
+docker-compose.yml  
+.env  
+README.md  
+
+---
+
+## How to Run the Project
+
+1. Clone the repository
+
+git clone https://github.com/ManikantaSarma45/Resume-Screening-System.git  
+cd Resume-Screening-System  
+
+2. Run using Docker
+
+docker-compose up --build  
+
+---
+
+## Application URLs
+
+Frontend: http://localhost:3000/upload.html  
+Backend: http://localhost:8000/docs  
+
+---
+
+## Features
+
+Upload resumes in PDF format  
+Create and manage job descriptions  
+Store resume data  
+Rank resumes based on job criteria  
+
+---
+
+## Database
+
+PostgreSQL is used as the database.
+
+Tables:
+Users  
+Jobs  
+Resumes  
+Scores  
+
+---
+
+## Environment Variables
+
+Example .env file:
+
+DATABASE_URL=postgresql://postgres:postgres@db:5432/ats_db  
+
+---
+
+## Notes
+
+Backend runs on port 8000  
+Frontend runs on port 3000  
+API base URL: http://localhost:8000/api/v1  
+
+---
+
+## Author
+
+Manikanta Sarma and harsha
+https://github.com/ManikantaSarma45

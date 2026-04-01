@@ -1,8 +1,8 @@
 // =========================
 // ✅ BASE URLS
 // =========================
-const API_BASE = "http://127.0.0.1:8000/api/v1"; // 🔥 FIXED
-const FILE_BASE = "http://127.0.0.1:8000";       // for PDF preview
+const API_BASE = "http://localhost:8000/api/v1"; // 🔥 FIXED
+const FILE_BASE = "http://localhost:8000";       // for PDF preview
 
 // =========================
 // ✅ LOAD ALL RESUMES (TABLE VIEW)

@@ -1,7 +1,7 @@
 async function runRanking() {
     const jobId = document.getElementById("jobId").value;
 
-    const res = await fetch(`http://127.0.0.1:8000/api/v1/ranking/rank/${jobId}`, {
+    const res = await fetch(`http://localhost:8000/api/v1/ranking/rank/${jobId}`, {
         method: "POST"
     });
 

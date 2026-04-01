@@ -2,10 +2,10 @@ import os
 from fastapi import APIRouter, UploadFile, File, Depends
 from sqlalchemy.orm import Session
 
-from backend.app.api.deps import get_db
-from backend.app.models.resume import Resume
-from backend.app.schemas.resume import ResumeOut
-from backend.app.services.resume_parser import extract_text_from_pdf
+from app.api.deps import get_db
+from app.models.resume import Resume
+from app.schemas.resume import ResumeOut
+from app.services.resume_parser import extract_text_from_pdf
 
 router = APIRouter()
 

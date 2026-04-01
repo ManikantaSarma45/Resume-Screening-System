@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
-from backend.app.api.deps import get_db
-from backend.app.models.job import Job
-from backend.app.models.resume import Resume
-from backend.app.models.score import Score
-from backend.app.services.ranking import hybrid_rank
+from app.api.deps import get_db
+from app.models.job import Job
+from app.models.resume import Resume
+from app.models.score import Score
+from app.services.ranking import hybrid_rank
 
 router = APIRouter()
 
