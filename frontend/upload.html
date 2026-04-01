@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-10 bg-gray-100">
+
+    <!-- Title -->
+    <h2 class="text-3xl font-bold mb-8 text-center">Resume Upload Portal</h2>
+
+    <!-- Upload Section -->
+    <div class="bg-white p-6 rounded shadow-md w-full max-w-md mx-auto mb-10">
+        
+        <input 
+            type="file" 
+            id="resume-file" 
+            class="mb-4 block w-full border p-2 rounded"
+        >
+        
+        <button 
+            onclick="uploadResume()" 
+            class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded w-full transition"
+        >
+            Upload Resume
+        </button>
+
+        <!-- Status Message -->
+        <p id="status" class="mt-4 text-sm text-center"></p>
+    </div>
+
+    <!-- Resume List Section -->
+    <div class="max-w-3xl mx-auto">
+        <h3 class="text-2xl font-semibold mb-4">Uploaded Resumes</h3>
+
+        <!-- Table View (Better than list 🔥) -->
+        <table class="w-full bg-white rounded shadow overflow-hidden">
+            <thead>
+                <tr class="bg-gray-200 text-left">
+                    <th class="p-3">ID</th>
+                    <th class="p-3">Filename</th>
+                    <th class="p-3">Preview</th>
+                    <th class="p-3">Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="resume-list"></tbody>
+        </table>
+    </div>
+
+    <!-- JS -->
+    <script src="js/upload.js"></script>
+
+</body>
+</html>
